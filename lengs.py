@@ -31,7 +31,7 @@ def palindrome_checker(text):
     for counter in range(i):        #loop will run i times, i.e 3 times...FOR EACH letter in text
         result.append(text[i-1])    #add each character from the end of the text to the result list
         i -=1    
-    reversed_text = "".join(result)
+    reversed_text = "".join(result).   #the join function adds all the elemens of a list and converts it to a string  
 
     if text == reversed_text:
         return True
@@ -39,5 +39,5 @@ def palindrome_checker(text):
     
 
 
-# magic_date("5/02/2010")
+print(magic_date("5/02/2010"))
 print(palindrome_checker("abcde"))
