@@ -24,7 +24,8 @@ def magic_date(date):
 
 def palindrome_checker(text):
     result = [] 
-
+    text = text.lower()
+    
     i = len(text)   #if text = 'abc', len returns length of an iterable, i.e i=3
 
     for counter in range(i):        #loop will run i times, i.e 3 times...FOR EACH letter in text
