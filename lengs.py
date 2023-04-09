@@ -28,7 +28,7 @@ def palindrome_checker(text):
     
     i = len(text)   #if text = 'abc', len returns length of an iterable, i.e i=3
 
-    for counter in range(i):        #loop will run i times, i.e 3 times...FOR EACH letter in text
+    for _ in range(i):        #loop will run i times, i.e 3 times...FOR EACH letter in text
         result.append(text[i-1])    #add each character from the end of the text to the result list
         i -=1    
     reversed_text = "".join(result).   #the join function adds all the elemens of a list and converts it to a string  
